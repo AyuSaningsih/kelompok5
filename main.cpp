@@ -13,7 +13,7 @@
      glEnable(GL_LIGHT1); //Enable light
      glEnable(GL_NORMALIZE); //Automatically normalize normals
      glShadeModel(GL_SMOOTH); //smooth shading
-     glClearColor(1.0,1.0,1.0,1.0);       //bg color
+     glClearColor(1.0,1.0,1.0,0.0);       //bg color
     }
 
  void handleResize(int w, int h) {
@@ -134,14 +134,14 @@ void display(){
      glVertex3f(-1.5f, 0.5f,  -0.35f); // e
      glVertex3f(-1.8f, 0.5f, -0.35f); // g
      glEnd();
-    
+
      //cekrek
      glPointSize(17.0);
      glBegin(GL_POINTS);
      glColor3f(1.0,1.0,1.0);
      glVertex3f(-1.4f,0.93f,0.0f);
      glEnd();
-    
+
      //lensa bg
      glBegin(GL_QUADS);
      glColor3f(0.0f, 0.0f, 0.0f);
@@ -184,3 +184,6 @@ int main(int argc, char** argv) {
      glutMainLoop();
      return 0;
     }
+
+
+    //semisal
